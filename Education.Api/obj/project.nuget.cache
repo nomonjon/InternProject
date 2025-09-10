@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "B1FeFZWaYV8=",
+  "success": true,
+  "projectFilePath": "D:\\newme\\project\\InternProject\\Education.Api\\Education.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Acer\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.4\\microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
