@@ -17,6 +17,9 @@ public class EducationDbContext(DbContextOptions<EducationDbContext> options) : 
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(EducationDbContext).Assembly);
 
+        // modelBuilder.Entity<City>().HasQueryFilter(c => !c.IsDeleted);
+        // modelBuilder.Entity<Department>().HasQueryFilter(c => !c.IsDeleted);
+
         base.OnModelCreating(modelBuilder);
     }
 }

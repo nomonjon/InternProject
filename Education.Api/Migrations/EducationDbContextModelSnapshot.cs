@@ -44,7 +44,7 @@ namespace Education.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Name")
+                    b.HasIndex("Name", "IsDeleted")
                         .IsUnique();
 
                     b.ToTable("Cities");

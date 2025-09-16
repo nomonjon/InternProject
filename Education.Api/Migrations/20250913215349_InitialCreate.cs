@@ -171,9 +171,9 @@ namespace Education.Api.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Cities_Name",
+                name: "IX_Cities_Name_IsDeleted",
                 table: "Cities",
-                column: "Name",
+                columns: new[] { "Name", "IsDeleted" },
                 unique: true);
 
             migrationBuilder.CreateIndex(

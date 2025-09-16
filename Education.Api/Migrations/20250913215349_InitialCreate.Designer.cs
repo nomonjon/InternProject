@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Education.Api.Migrations
 {
     [DbContext(typeof(EducationDbContext))]
-    [Migration("20250911174724_InitialCreate")]
+    [Migration("20250913215349_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -47,7 +47,7 @@ namespace Education.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Name")
+                    b.HasIndex("Name", "IsDeleted")
                         .IsUnique();
 
                     b.ToTable("Cities");
