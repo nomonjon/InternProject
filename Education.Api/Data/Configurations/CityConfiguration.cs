@@ -20,7 +20,6 @@ public class CityConfiguration : IEntityTypeConfiguration<City>
             .WithOne(t => t.City)
             .HasForeignKey(t => t.CityId);
 
-        builder.HasIndex(c => c.Name)
-            .IsUnique();
+        builder.HasIndex(c => new { c.Name, c.IsDeleted }).IsUnique();
     }
 }
